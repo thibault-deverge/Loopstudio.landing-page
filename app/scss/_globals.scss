@@ -1,3 +1,4 @@
+// Reset & Setup
 html {
   font-size: 62.5%; // 1rem = 10px
   box-sizing: border-box;
@@ -18,4 +19,18 @@ body {
   color: $veryDarkGray;
   line-height: 2.5rem;
   overflow-x: hidden;
+}
+
+// Visibility
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
 }

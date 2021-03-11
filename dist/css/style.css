@@ -21,4 +21,16 @@ body {
   line-height: 2.5rem;
   overflow-x: hidden;
 }
+
+@media (min-width: 102.4rem) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 76.8rem) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
