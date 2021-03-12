@@ -6,6 +6,8 @@
     }
 
     .header__toggle {
+      padding-bottom: 4px;
+
       > span:first-child {
         transform: rotate(45deg);
       }
