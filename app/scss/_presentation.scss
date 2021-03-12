@@ -1,7 +1,7 @@
 .presentation {
   width: 32.7rem;
   height: 53rem;
-  margin-top: 10rem;
+  margin: 10rem auto;
 
   @include breakpoint-up(large) {
     width: 90%;
