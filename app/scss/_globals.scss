@@ -34,6 +34,10 @@ a:hover {
   text-decoration: none;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 ////////////////
 // Spacing
 .container {
@@ -61,7 +65,3 @@ a:hover {
     display: none;
   }
 }
-
-// .had-fade {
-//   visibility: hidden;
-// }

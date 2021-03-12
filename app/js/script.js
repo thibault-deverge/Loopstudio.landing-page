@@ -17,12 +17,14 @@ const addFadeIn = function (elem) {
 
 const openMenu = function () {
   header.classList.add("open");
+  document.body.classList.add("noscroll");
   addFadeOut(headerMenu);
   addFadeIn(toggleMenu);
 };
 
 const closeMenu = function () {
   header.classList.remove("open");
+  document.body.classList.remove("noscroll");
   addFadeOut(toggleMenu);
   addFadeIn(headerMenu);
 };
