@@ -21,37 +21,39 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <a class="header__logo" href="#">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
-        <div class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo" href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <div id="hide-for-desktop" class="header__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="hide-for-mobile" class="header__links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <div class="header__title">
+          <span>Immersive</span>
+          <span>Experiences</span>
+          <span>That</span>
+          <span>Deliver</span>
         </div>
-        <ul class="header__links hide-for-mobile">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
-      <div class="header__title">
-        <span>Immersive</span>
-        <span>Experiences</span>
-        <span>That</span>
-        <span>Deliver</span>
-      </div>
-      <div class="header__menu had-fade">
-        <ul class="header__links--menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
+        <div class="header__menu had-fade">
+          <ul class="header__links--menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--  The

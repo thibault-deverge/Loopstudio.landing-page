@@ -23,14 +23,29 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 64em) {
-  .hide-for-desktop {
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 111.1rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 48.1em) {
+  #hide-for-mobile {
     display: none;
   }
 }
 
-@media (max-width: 48em) {
-  .hide-for-mobile {
+@media (min-width: 48.1em) {
+  #hide-for-desktop {
     display: none;
   }
 }
@@ -41,7 +56,8 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url("/images/mobile/image-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/images/mobile/image-hero.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/mobile/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -49,7 +65,8 @@ body {
 
 @media (min-width: 64em) {
   .header {
-    background-image: url("/images/desktop/image-hero.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/images/desktop/image-hero.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/desktop/image-hero.jpg");
     background-size: cover;
     height: 68vh;
   }
@@ -62,6 +79,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 4rem 2.4rem;
 }
 
@@ -74,5 +94,19 @@ body {
 
 .header__toggle span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__links li:not(:last-child) {
+  padding-right: 3.1rem;
+}
+
+.header__links li a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

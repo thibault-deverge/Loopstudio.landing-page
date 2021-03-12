@@ -1,12 +1,22 @@
 .header {
   height: 100vh;
-  background-image: url("/images/mobile/image-hero.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba($black, 0.4),
+      rgba($black, 0.4)
+    ),
+    url("/images/mobile/image-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
   @include breakpoint-up(large) {
-    background-image: url("/images/desktop/image-hero.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba($black, 0.4),
+        rgba($black, 0.4)
+      ),
+      url("/images/desktop/image-hero.jpg");
     background-size: cover;
     height: 68vh;
   }
@@ -14,6 +24,7 @@
   &__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 4rem 2.4rem;
   }
 
@@ -34,10 +45,16 @@
   }
 
   &__links {
+    display: flex;
+
     li {
+      &:not(:last-child) {
+        padding-right: 3.1rem;
+      }
     }
 
     li a {
+      color: $white;
     }
   }
 
