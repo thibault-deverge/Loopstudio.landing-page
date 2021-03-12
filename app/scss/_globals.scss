@@ -1,5 +1,6 @@
+// Reset & Setup
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px
   box-sizing: border-box;
 }
 
@@ -12,10 +13,28 @@ html {
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: "Alata", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   color: $veryDarkGray;
   line-height: 2.5rem;
   overflow-x: hidden;
+}
+
+// Visibility
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.had-fade {
+  visibility: hidden;
 }
