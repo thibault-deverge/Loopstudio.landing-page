@@ -29,10 +29,11 @@
 
   &__social {
     order: 3;
-    padding-bottom: 1.6rem;
+    // padding-bottom: 1.6rem;
 
     img {
       padding-bottom: 10px;
+      border-bottom: 1px solid $black;
 
       &:not(:last-child) {
         margin-right: 1.6rem;
