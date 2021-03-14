@@ -96,6 +96,13 @@
       font-weight: 400;
       color: $white;
       z-index: 2;
+
+      @include breakpoint-up(large) {
+        width: 70%;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+        font-size: 3rem;
+      }
     }
 
     // LOADING IMAGE

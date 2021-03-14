@@ -421,7 +421,7 @@ a:hover {
 
 @media (min-width: 64em) {
   .presentation__description h2 {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding-top: 5rem;
     text-align: left;
@@ -568,6 +568,15 @@ a:hover {
   font-weight: 400;
   color: white;
   z-index: 2;
+}
+
+@media (min-width: 64em) {
+  .creation__gallery h3 {
+    width: 70%;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
 }
 
 .creation__gallery .item1 {
